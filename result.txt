@@ -1,0 +1,111 @@
+import math
+
+def complexMath(x, y):
+    return (((math.sin(x) * math.cos(y)) + math.pow(x, y)) - math.sqrt(math.fabs((x - y))))
+def bitOperations(num):
+    return ((((num << 2) | (num >> 3)) ^ (num & 255)) + (num | 255))
+def financialCalculations(principal, rate, years):
+    compoundInterest = (principal * math.pow((1 + (rate / 100.0)), years))
+    simpleInterest = (principal * (1 + ((rate / 100.0) * years)))
+    return (compoundInterest + simpleInterest)
+def temperatureConversions(celsius):
+    fahrenheit = (((celsius * 9.0) / 5.0) + 32.0)
+    kelvin = (celsius + 273.15)
+    return (fahrenheit + kelvin)
+def main():
+    finalResult = 0.0
+    math1 = 0.0
+    trig6 = 0.0
+    extra1 = 0.0
+    finalInt = 0
+    a = 0
+    b = 0
+    c = 0
+    int1 = 0
+    int2 = 0
+    int3 = 0
+    int4 = 0
+    int5 = 0
+    int6 = 0
+    bit1 = 0
+    bit2 = 0
+    bit3 = 0
+    bit4 = 0
+    bit5 = 0
+    bit6 = 0
+    bitFunc = 0
+    bitAdd = 0
+    res = 0
+    castResult = 0
+    finalResult = 0.0
+    finalInt = 0
+    arithmetic1 = (15.0 + 7.0)
+    arithmetic2 = (23.0 - 4.0)
+    arithmetic3 = (5.0 + 2.0)
+    arithmetic4 = (arithmetic1 * arithmetic2)
+    arithmetic5 = (arithmetic4 / arithmetic3)
+    finalResult = (finalResult + arithmetic5)
+    math1 = math.fmod(28.0, 3.0)
+    math2 = math.pow(2.0, 3.0)
+    math3 = (math1 * math2)
+    finalResult = (finalResult + math3)
+    trig1 = math.sin(0.5)
+    trig2 = math.cos(0.3)
+    trig3 = math.tan(0.1)
+    trig4 = (trig1 * trig2)
+    trig5 = (trig4 + trig3)
+    trig6 = (trig5 / 2.0)
+    trig7 = (trig5 / 3.0)
+    trig8 = math.asin(trig6)
+    trig9 = math.acos(trig7)
+    trig10 = (trig8 * trig9)
+    finalResult = (finalResult + trig10)
+    a = 25
+    b = 13
+    c = 7
+    int1 = (a * b)
+    int2 = (int1 + c)
+    int3 = (b - c)
+    int4 = (int2 // int3)
+    int5 = (a + b)
+    int6 = (int4 % int5)
+    finalInt = (finalInt + int6)
+    bit1 = (a & b)
+    bit2 = (c % 4)
+    bit3 = (bit1 << bit2)
+    bit4 = (a | b)
+    bit5 = (c // 2)
+    bit6 = (bit4 >> bit5)
+    finalInt = (finalInt | bit3)
+    finalInt = (finalInt ^ bit6)
+    bitFunc = bitOperations(42)
+    bitAdd = (bitFunc + 17)
+    finalInt = (finalInt + bitAdd)
+    finance = financialCalculations(1000.0, 5.0, 10)
+    finalResult = (finalResult + finance)
+    temp = temperatureConversions(25.0)
+    finalResult = (finalResult + temp)
+    complex_val = complexMath(2.0, 3.0)
+    finalResult = (finalResult + complex_val)
+    extra1 = math.tan((10.0 / 6.0))
+    extra2 = math.tan(1.0)
+    extra3 = (extra1 * extra2)
+    finalResult = (finalResult + extra3)
+    extra4 = math.exp(1.0)
+    extra5 = math.log(10.0)
+    extra6 = (extra4 * extra5)
+    finalResult = (finalResult + extra6)
+    extra7 = math.sqrt(144.0)
+    extra8 = math.log(27.0)
+    extra9 = (extra7 * extra8)
+    finalResult = (finalResult + extra9)
+    res = ((2 + 3) + 4)
+    castResult = int(finalResult)
+    finalInt = ((finalInt + castResult) + res)
+    print("Результат: %.3f\n" % (finalResult))
+    print("Целочисленный результат: %d\n" % (finalInt))
+    return 0
+
+# Вызов main функции
+if __name__ == "__main__":
+    main()
