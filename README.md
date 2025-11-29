@@ -34,6 +34,7 @@ gcc lex.yy.c y.tab.c -o result.exe
 ./result
 
 📝 Пример использования
+
 Входной код (C-подобный)
 double complexMath(double x, double y) {
     return sin(x) * cos(y) + pow(x, y) - sqrt(fabs(x - y));
@@ -56,7 +57,6 @@ def main():
     print("Результат: %.3f" % (result))
     return 0
 
-# Вызов main функции
 if __name__ == "__main__":
     main()
 
